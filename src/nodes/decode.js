@@ -61,8 +61,8 @@ ${msg.protobufType}
             let decodeoptions = {
                 longs: String,
                 enums: String,
-                bytes: String,
-                defaults: false, // includes default values, otherwise not transmitted values will be assigned their default value!
+                //bytes: String,
+                //defaults: false, // includes default values, otherwise not transmitted values will be assigned their default value!
             };
             msg.payload = messageType.toObject(message, decodeoptions);
             node.status({fill: 'green', shape: 'dot', text: 'Processed'});
